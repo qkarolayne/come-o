@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*background-image: linear-gradient(black,white);
+    background-attachment: scroll;
+    background-size:cover;*/
+    
+}
+
+nav.menu-lateral{
+    width: 100px;
+    height: 100%;
+    background-color: #add1d6;
+    padding: 40px 0 40px 1%;
+    /*fixa o menu na lateral, para quando tiver rolagem na pagina*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+nav.navbar{
+    background-color: #add1d6;
+}
+nav.navbar> navbar-brand{
+    color: #fff;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*tira os pontinho de lista*/
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+/*adiciona a cor quando passa o mouse por cima do item*/
+ul li.item-menu:hover{
+    background-color: #107faa;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: #107faa;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+/*fasta o texo do icone*/
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 20px;
+}
+
